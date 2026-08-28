@@ -51,7 +51,7 @@ ctrl+q script-message-to ytquality toggle
 
 Create `~/.config/mpv/script-opts/ytquality.conf`:
 
-```ini
+```conf
 # yt-dlp executable or absolute path.
 yt_dlp=yt-dlp
 
@@ -65,6 +65,10 @@ refresh_formats=no
 timeout=12
 ```
 
+```conf
+# set default video (mpv.conf)
+ytdl-format=bestvideo*[height<=480]+bestaudio/best
+```
 ## Note
 
 The auto-close timeout counts from when the menu is shown, not from when the
